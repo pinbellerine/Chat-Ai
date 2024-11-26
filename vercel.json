@@ -1,0 +1,10 @@
+{
+    "build": {
+      "env": {
+        "PNPM_FLAGS": "--no-frozen-lockfile"
+      }
+    },
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/" }
+    ]
+  }

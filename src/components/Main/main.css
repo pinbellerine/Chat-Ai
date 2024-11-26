@@ -1,0 +1,222 @@
+.main{
+ flex: 1;
+ min-height: 100vh;
+ padding-bottom: 15vh;
+ position: relative;
+}
+
+.main .nav{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   font-size: 22px;
+   padding: 20px;
+   color: #585858;
+}
+
+.main .nav img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.main .greet{
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500px;
+    padding: 20px;
+}
+
+.main .greet span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546); /* For older WebKit browsers */
+    background: linear-gradient(16deg, #4b90ff, #ff5546); /* Standard property for other browsers */
+    
+    -webkit-background-clip: text; /* WebKit-specific */
+    background-clip: text; /* Standard property */
+    
+    -webkit-text-fill-color: transparent; /* Needed for text gradient in WebKit browsers */
+    color: transparent; /* Standard property */
+  }
+
+  .main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .main .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    position: relative;
+    cursor: pointer;
+  }
+
+.main .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main .card p{
+    color: #585858;
+    font-size: 17px; 
+}
+
+.main .card:hover{
+    background-color: #dfe4ea;
+}
+
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-box input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.search-box div{
+   display: flex;
+   align-items: center;
+   gap: 15px; 
+}
+
+.main .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antar pesan */
+    padding: 10px;
+  }
+  
+  .message {
+    max-width: 70%; /* Batasi lebar pesan */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .user-message {
+    align-self: flex-end; /* Buat pesan user di sebelah kanan */
+    background-color: #e0f7fa;
+    color: #000;
+    text-align: right;
+  }
+  
+  .bot-message {
+    align-self: flex-start; /* Buat pesan bot di sebelah kiri */
+    background-color: #eeeeee;
+    color: #000;
+    text-align: left;
+  }
+
+  /* ... (your existing CSS) ... */
+
+.loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.loading-animation .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-animation .dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loading-animation .dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+.custom-prompt {
+    margin-bottom: 10px; /* Jarak antara prompt dan kotak pesan */
+}
+
+.custom-prompt input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+  
